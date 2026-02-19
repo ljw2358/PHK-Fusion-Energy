@@ -1,6 +1,6 @@
-# PHK Fusion Energy
+# HK Fusion Energy
 
-PHK Fusion Energy is a fusion-energy focused organization dedicated to accelerating fusion commercialization
+HK Fusion Energy is a fusion-energy focused organization dedicated to accelerating fusion commercialization
 and building an industrial-scale fusion ecosystem with robotics, AI, and long-term infrastructure.
 
 ## Scope

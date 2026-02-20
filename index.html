@@ -3,393 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HK-FUSION | Artificial Sun & Nuclear Fusion Energy</title>
+<title>HK Fusion Energy | Sovereign Clean Power Infrastructure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#050510;
-color:white;
-line-height:1.8;
+    margin:0;
+    font-family:'Orbitron',sans-serif;
+    background:linear-gradient(135deg,#0d111e,#11203a);
+    color:#e6f3ff;
 }
+
 header{
-background:linear-gradient(135deg,#1a0000,#3a0000,#6b0f0f);
-padding:80px 20px;
-text-align:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 60px;
 }
-header h1{
-font-size:60px;
-letter-spacing:4px;
-margin-bottom:15px;
-color:#ffcc66;
+
+h1{
+    font-size:46px;
+    color:#00f0ff;
 }
-header p{
-font-size:22px;
-opacity:0.9;
+
+.lang-buttons button{
+    background:transparent;
+    border:1px solid #00f0ff;
+    color:#00f0ff;
+    padding:8px 18px;
+    margin-left:8px;
+    cursor:pointer;
+    transition:0.3s;
 }
-nav{
-background:#120000;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:999;
+
+.lang-buttons button:hover{
+    background:#00f0ff;
+    color:#000;
 }
-nav button{
-margin:6px;
-padding:10px 20px;
-border:none;
-background:#ff6600;
-color:black;
-font-weight:bold;
-border-radius:5px;
-cursor:pointer;
+
+main{
+    max-width:1000px;
+    margin:40px 60px;
 }
-nav button:hover{background:#ffaa00;}
-.section{
-padding:80px 10%;
+
+h2{
+    color:#c86bff;
+    margin-top:40px;
 }
-.section h2{
-font-size:38px;
-margin-bottom:25px;
-color:#ff9933;
+
+p{
+    line-height:1.8;
+    font-size:17px;
 }
-.section h3{
-margin-top:25px;
-margin-bottom:15px;
-color:#ffd27f;
+
+.highlight{
+    color:#00f0ff;
+    font-weight:bold;
 }
-ul{margin-left:20px;margin-top:10px;}
+
 footer{
-background:black;
-text-align:center;
-padding:50px;
-margin-top:80px;
-font-size:14px;
-opacity:0.8;
+    margin:80px 60px 40px 60px;
+    font-size:14px;
+    color:#8899aa;
 }
-.lang{display:none;}
 </style>
 
 <script>
-function changeLang(lang){
-document.querySelectorAll(".lang").forEach(el=>el.style.display="none");
-document.getElementById(lang).style.display="block";
+function switchLang(lang){
+    document.querySelectorAll('.lang').forEach(el=>el.style.display='none');
+    document.getElementById(lang).style.display='block';
+}
+
+window.onload=function(){
+    const l=navigator.language;
+    if(l.startsWith('ko')) switchLang('ko');
+    else if(l.startsWith('zh')) switchLang('zh');
+    else if(l.startsWith('ar')) switchLang('ar');
+    else switchLang('en');
 }
 </script>
-</head>
 
-<body onload="changeLang('en')">
+</head>
+<body>
 
 <header>
-<h1>HK-FUSION</h1>
-<p>Artificial Sun • Controlled Nuclear Fusion • Unlimited Clean Energy</p>
+<h1>HK Fusion Energy</h1>
+<div class="lang-buttons">
+<button onclick="switchLang('en')">English</button>
+<button onclick="switchLang('ko')">한국어</button>
+<button onclick="switchLang('zh')">中文</button>
+<button onclick="switchLang('ar')">العربية</button>
+</div>
 </header>
 
-<nav>
-<button onclick="changeLang('en')">English</button>
-<button onclick="changeLang('kr')">한국어</button>
-<button onclick="changeLang('cn')">中文</button>
-<button onclick="changeLang('ar')">العربية</button>
-</nav>
+<main>
 
-<!-- ================= ENGLISH ================= -->
+<!-- ENGLISH -->
 <div id="en" class="lang">
+<p><strong>Powering Humanity with Clean, Infinite, Sovereign Energy.</strong></p>
 
-<div class="section">
-<h2>About HK-FUSION</h2>
-<p>
-HK-FUSION is a next-generation energy research corporation dedicated to the
-development of Artificial Sun technology through controlled nuclear fusion.
-Our objective is to achieve stable, safe, and commercially viable fusion power
-that can supply clean energy for centuries.
-</p>
+<h2>Corporate Overview</h2>
+<p>HK Fusion Energy is a frontier clean power technology company pioneering scalable fusion energy systems for industrial, grid-scale, aerospace, and strategic infrastructure deployment.</p>
+<p>We leverage advanced plasma confinement, superconducting magnet architectures, and AI-optimized control systems to unlock commercial fusion viability.</p>
+
+<h2>Core Strategic Domains</h2>
+<p>Fusion Reactor Platforms • Industrial Power Generation • Space-Based Energy Systems • Grid-Scale Sovereign Infrastructure</p>
+
+<h2>Technology Edge</h2>
+<p>Our proprietary high-temperature plasma stabilization and quantum-optimized AI control frameworks accelerate net-positive fusion conditions, enabling safe, continuous, ultra-low carbon power production.</p>
+
+<h2>Market Opportunity</h2>
+<p>Global energy demand, decarbonization mandates, and strategic energy independence create a multi-trillion-dollar fusion market opportunity. HK Fusion Energy is positioned as a <span class="highlight">sovereign energy infrastructure provider</span> capable of serving governments, utilities, and advanced industrial sectors.</p>
+
+<h2>Vision 2035</h2>
+<p>Achieve commercial fusion rollout by 2030 and deploy sovereign fusion power stations globally, supporting resilient smart cities, aerospace energy networks, and strategic national infrastructures.</p>
+
+<p>Contact: info@hkfusionenergy</p>
 </div>
 
-<div class="section">
-<h2>Core Technologies</h2>
-<h3>Magnetic Confinement (Tokamak)</h3>
-<p>Advanced plasma containment using superconducting magnetic fields.</p>
+<!-- KOREAN -->
+<div id="ko" class="lang" style="display:none;">
+<p><strong>깨끗하고 무한하며 주권적 에너지를 실현합니다.</strong></p>
 
-<h3>Laser Inertial Confinement</h3>
-<p>High-energy laser compression systems designed to achieve ignition.</p>
+<h2>회사 개요</h2>
+<p>HK Fusion Energy는 산업용, 전력망, 항공우주 및 전략 인프라 적용을 위한 확장 가능한 핵융합 에너지 시스템을 선도하는 클린 파워 기술 기업입니다.</p>
+<p>첨단 플라즈마 제어 기술, 초전도 자석 구조, AI 최적 제어 시스템을 결합하여 상업적 핵융합 실현을 가속화합니다.</p>
 
-<h3>Plasma Stability Engineering</h3>
-<p>Real-time AI-assisted plasma control for sustained reactions.</p>
+<h2>핵심 전략 분야</h2>
+<p>융합로 플랫폼 • 산업용 발전 • 우주 기반 에너지 • 주권형 전력망 인프라</p>
 
-<h3>Fusion Materials Science</h3>
-<p>Radiation-resistant alloys and heat-resistant reactor walls.</p>
+<h2>기술 경쟁력</h2>
+<p>독자적 고온 플라즈마 안정화 기술과 양자 최적화 AI 제어 체계는 지속적이며 안전한 저탄소 에너지 생산을 가능하게 합니다.</p>
 
-<h3>Grid Integration</h3>
-<p>Fusion-to-grid conversion systems for national infrastructure deployment.</p>
+<h2>시장 기회</h2>
+<p>에너지 수요 증가, 탈탄소화 정책, 에너지 주권 확보는 수조 달러 규모의 핵융합 시장 기회를 창출합니다. HK Fusion Energy는 정부, 전력공급사 및 첨단 산업을 위한 주권형 에너지 인프라 제공자로 포지셔닝되어 있습니다.</p>
+
+<h2>Vision 2035</h2>
+<p>2030년 상업용 핵융합 상용화를 달성하고, 전략적 스마트 도시 및 국가 인프라 전역에 주권형 융합 에너지 발전소를 구축합니다.</p>
+
+<p>문의: info@hkfusionenergy</p>
 </div>
 
-<div class="section">
-<h2>Research & Development</h2>
-<ul>
-<li>High-temperature superconductors</li>
-<li>AI plasma diagnostics</li>
-<li>Quantum simulation for reactor optimization</li>
-<li>Neutron shielding materials</li>
-<li>Compact modular fusion reactors</li>
-</ul>
+<!-- CHINESE -->
+<div id="zh" class="lang" style="display:none;">
+<p><strong>以清洁、无限、主权能源驱动人类未来。</strong></p>
+
+<h2>公司概述</h2>
+<p>HK Fusion Energy 是一家领先的清洁能源技术企业，专注于工业级、全网规模及战略基础设施的可扩展核聚变能源系统研发。</p>
+<p>我们结合先进等离子体约束技术、超导磁体架构和 AI 优化控制系统，实现商业核聚变能量的可行性。</p>
+
+<h2>核心战略领域</h2>
+<p>聚变反应堆平台 • 工业发电 • 太空能源系统 • 主权电网基础设施</p>
+
+<h2>技术优势</h2>
+<p>我们自主研发的高温等离子体稳定化和量子优化 AI 控制框架加速实现净正能量聚变条件，提供安全、连续、超低碳电力。</p>
+
+<h2>市场机会</h2>
+<p>全球能源需求、脱碳政策和能源主权战略共同推动数万亿美元规模的聚变能源市场机会。HK Fusion Energy 定位为可服务政府、公共电网及高端工业的<span class="highlight">主权能源基础设施供应商</span>。</p>
+
+<h2>愿景 2035</h2>
+<p>实现 2030 年商业核聚变部署，并在全球范围内部署主权核聚变电站，支持智能城市、太空能源网络和国家战略基础设施。</p>
+
+<p>联系: info@hkfusionenergy</p>
 </div>
 
-<div class="section">
-<h2>Commercial Roadmap</h2>
-<ul>
-<li>Phase 1 – Experimental plasma ignition</li>
-<li>Phase 2 – Net positive energy output</li>
-<li>Phase 3 – Pilot fusion reactor facility</li>
-<li>Phase 4 – Commercial power plant deployment</li>
-</ul>
+<!-- ARABIC -->
+<div id="ar" class="lang" style="display:none; direction:rtl;">
+<p><strong>نُمكّن البشرية بطاقة نظيفة، لا نهائية، وسيادية.</strong></p>
+
+<h2>نظرة عامة</h2>
+<p>HK Fusion Energy شركة تقنية طاقة نظيفة في طليعة تطوير أنظمة الطاقة الاندماجية القابلة للتوسع للتطبيقات الصناعية، الشبكات الكهربائية، الفضاء والبنى التحتية الاستراتيجية.</p>
+<p>نستفيد من التحكم المتقدم في البلازما، هياكل المغناطيسية فائقة التوصيل وأنظمة التحكم المُحسّنة بالذكاء الاصطناعي لتحقيق جدوى الاندماج التجاري.</p>
+
+<h2>المجالات الاستراتيجية</h2>
+<p>منصات مفاعلات الاندماج • توليد الطاقة الصناعية • أنظمة الطاقة الفضائية • بنى تحتية سيادية للشبكات</p>
+
+<h2>الميزة التقنية</h2>
+<p>إطار التحكم الذكي المدعوم بالذكاء الاصطناعي وتقنيات استقرار البلازما عالية الحرارة يمكننا من إنتاج طاقة منخفضة الكربون بشكل آمن ومستمر.</p>
+
+<h2>فرصة الاستثمار</h2>
+<p>طلب الطاقة العالمي، سياسات خفض الكربون، واستراتيجيات السيادة الطاقية تخلق سوقاً ضخماً لاندماج الطاقة. HK Fusion Energy في موقف يؤهلها لتكون<span class="highlight">مزود بنية تحتية طاقية سيادية</span> يخدم الحكومات والقطاع الصناعي المتقدم.</p>
+
+<h2>رؤية 2035</h2>
+<p>نحقق الانتشار التجاري لطاقة الاندماج بحلول 2030 وننشر محطات طاقة اندماجية سيادية عالمياً لدعم المدن الذكية وشبكات الطاقة المتقدمة.</p>
+
+<p>البريد الإلكتروني: info@hkfusionenergy</p>
 </div>
 
-<div class="section">
-<h2>Global Impact</h2>
-<p>
-Fusion eliminates carbon emissions, reduces fossil fuel dependency,
-and provides limitless power for AI, robotics, data centers,
-and future space industries.
-</p>
-</div>
-
-<div class="section">
-<h2>Partnership & Investment</h2>
-<p>
-HK-FUSION collaborates with governments, research institutions,
-energy providers, and strategic investors.
-</p>
-</div>
-
-<div class="section">
-<h2>Contact</h2>
-<p>Email: info@hkfusion.com</p>
-</div>
-
-</div>
-
-<!-- ================= KOREAN ================= -->
-<div id="kr" class="lang">
-
-<div class="section">
-<h2>HK-FUSION 소개</h2>
-<p>
-HK-FUSION은 인공태양 기술을 기반으로 제어 가능한 핵융합 에너지를
-상용화하기 위해 설립된 차세대 에너지 연구 기업입니다.
-안정적이고 안전한 청정 에너지 공급을 목표로 합니다.
-</p>
-</div>
-
-<div class="section">
-<h2>핵심 기술</h2>
-<h3>토카막 자기밀폐 방식</h3>
-<p>초전도 자기장을 활용한 플라즈마 제어 기술.</p>
-
-<h3>레이저 관성 융합</h3>
-<p>고출력 레이저 압축을 통한 점화 기술.</p>
-
-<h3>플라즈마 안정성 공학</h3>
-<p>AI 기반 실시간 플라즈마 제어 시스템.</p>
-
-<h3>융합 소재 과학</h3>
-<p>방사선 내성 합금 및 고열 내구 소재 개발.</p>
-
-<h3>전력망 통합 기술</h3>
-<p>국가 전력망과 연결되는 발전 시스템 구축.</p>
-</div>
-
-<div class="section">
-<h2>연구개발</h2>
-<ul>
-<li>고온 초전도체 개발</li>
-<li>AI 플라즈마 진단 시스템</li>
-<li>양자 시뮬레이션 기반 최적화</li>
-<li>중성자 차폐 소재</li>
-<li>소형 모듈형 융합로 설계</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>상업화 로드맵</h2>
-<ul>
-<li>1단계 – 플라즈마 점화 실험</li>
-<li>2단계 – 순에너지 생산 달성</li>
-<li>3단계 – 파일럿 발전소 구축</li>
-<li>4단계 – 상업용 핵융합 발전소 운영</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>글로벌 영향</h2>
-<p>
-핵융합은 탄소 배출을 제거하고,
-AI·로봇·데이터센터·우주 산업에 필요한 무한 전력을 제공합니다.
-</p>
-</div>
-
-<div class="section">
-<h2>협력 및 투자</h2>
-<p>
-정부, 연구기관, 에너지 기업 및 전략 투자자와 협력합니다.
-</p>
-</div>
-
-<div class="section">
-<h2>문의</h2>
-<p>이메일: info@hkfusion.com</p>
-</div>
-
-</div>
-
-<!-- ================= CHINESE ================= -->
-<div id="cn" class="lang">
-
-<div class="section">
-<h2>关于 HK-FUSION</h2>
-<p>
-HK-FUSION 致力于通过可控核聚变技术实现“人造太阳”，
-为全球提供长期、稳定、清洁的能源解决方案。
-</p>
-</div>
-
-<div class="section">
-<h2>核心技术</h2>
-<h3>托卡马克磁约束</h3>
-<p>利用超导磁场控制高温等离子体。</p>
-
-<h3>激光惯性聚变</h3>
-<p>通过高能激光压缩实现点火。</p>
-
-<h3>等离子体稳定工程</h3>
-<p>基于AI的实时控制系统。</p>
-
-<h3>聚变材料科学</h3>
-<p>耐辐射与耐高温材料研发。</p>
-
-<h3>电网整合</h3>
-<p>实现商业化电力输出与基础设施对接。</p>
-</div>
-
-<div class="section">
-<h2>研发方向</h2>
-<ul>
-<li>高温超导技术</li>
-<li>AI 等离子体诊断</li>
-<li>量子模拟优化</li>
-<li>中子屏蔽材料</li>
-<li>模块化小型反应堆</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>商业路线图</h2>
-<ul>
-<li>第一阶段 – 等离子体点火验证</li>
-<li>第二阶段 – 实现净能量输出</li>
-<li>第三阶段 – 建设试验反应堆</li>
-<li>第四阶段 – 商业化发电站</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>全球影响</h2>
-<p>
-聚变能源将消除碳排放，
-为人工智能与未来工业提供无限动力。
-</p>
-</div>
-
-<div class="section">
-<h2>合作与投资</h2>
-<p>
-欢迎政府机构、能源企业与投资方合作。</p>
-</div>
-
-<div class="section">
-<h2>联系</h2>
-<p>邮箱: info@hkfusion.com</p>
-</div>
-
-</div>
-
-<!-- ================= ARABIC ================= -->
-<div id="ar" class="lang" dir="rtl">
-
-<div class="section">
-<h2>حول HK-FUSION</h2>
-<p>
-HK-FUSION شركة متقدمة تسعى إلى تطوير طاقة الاندماج النووي
-وتقنية الشمس الاصطناعية لتوفير طاقة نظيفة ومستدامة للعالم.
-</p>
-</div>
-
-<div class="section">
-<h2>التقنيات الأساسية</h2>
-<h3>احتواء توكاماك المغناطيسي</h3>
-<p>أنظمة مغناطيسية فائقة التوصيل للتحكم في البلازما.</p>
-
-<h3>الاندماج بالليزر</h3>
-<p>ضغط بالليزر عالي الطاقة لتحقيق الاشتعال.</p>
-
-<h3>هندسة استقرار البلازما</h3>
-<p>أنظمة تحكم مدعومة بالذكاء الاصطناعي.</p>
-
-<h3>علوم المواد</h3>
-<p>مواد مقاومة للإشعاع والحرارة العالية.</p>
-
-<h3>تكامل الشبكات</h3>
-<p>إدخال طاقة الاندماج إلى البنية التحتية الوطنية.</p>
-</div>
-
-<div class="section">
-<h2>البحث والتطوير</h2>
-<ul>
-<li>موصلات فائقة عالية الحرارة</li>
-<li>تشخيص البلازما بالذكاء الاصطناعي</li>
-<li>محاكاة كمّية لتحسين المفاعلات</li>
-<li>مواد درع نيوتروني</li>
-<li>مفاعلات اندماج معيارية صغيرة</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>خارطة الطريق التجارية</h2>
-<ul>
-<li>المرحلة 1 – اختبار الاشتعال</li>
-<li>المرحلة 2 – تحقيق طاقة صافية إيجابية</li>
-<li>المرحلة 3 – إنشاء مفاعل تجريبي</li>
-<li>المرحلة 4 – محطات طاقة تجارية</li>
-</ul>
-</div>
-
-<div class="section">
-<h2>الأثر العالمي</h2>
-<p>
-الاندماج النووي يزيل الانبعاثات الكربونية
-ويوفر طاقة غير محدودة للصناعات المستقبلية.
-</p>
-</div>
-
-<div class="section">
-<h2>الشراكات والاستثمار</h2>
-<p>
-نتعاون مع الحكومات والمؤسسات البحثية والمستثمرين الاستراتيجيين.
-</p>
-</div>
-
-<div class="section">
-<h2>اتصل بنا</h2>
-<p>البريد الإلكتروني: info@hkfusion.com</p>
-</div>
-
-</div>
+</main>
 
 <footer>
-© 2026 HK-FUSION. All Rights Reserved.
-<br>
-info@hkfusion.com
+© 2026 HK Fusion Energy | Sovereign Clean Power Infrastructure
 </footer>
 
 </body>
